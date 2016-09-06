@@ -1,11 +1,13 @@
 # averageOfX.py
 
-n = 0
-nlist = []
-while n>=0:
-    n = int(input())
-    nlist.append(n)
-sum = 0
+n = input()
+nlist = n.split()
+l = 0
+s = 0
 for i in nlist:
-  sum+=i
-print(sum/len(nlist))
+    if int(i)>=0:
+        s+=int(i)
+        l+=1
+    else:
+        break;
+print(s/l)
