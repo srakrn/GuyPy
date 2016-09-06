@@ -1,10 +1,14 @@
 # palindrome.py
 
-txt = input().split() #อีเกรดเดอร์ควาย
+txt = input() #อีเกรดเดอร์ควาย
+txt = txt.strip()
 l = len(txt)-1
-status = "Y"
-for i in range(0,int(l/2)):
-    if txt[i] != txt[l-i]:
-        status = "N"
-        break
+status = "N"
+for i in range(0,l+1):
+    secondPart = txt[i:]
+    firstPart = txt[0:i]
+    joint = secondPart + firstPart
+    for j in range(0,int(l/2)):
+        if joint[j]==joint[l-j]:
+            status = "Y"
 print(status)
