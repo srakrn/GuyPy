@@ -25,7 +25,7 @@ for i in range(0,l+1):
     joint = txt[i:] + txt[:i]
 
     # วนเป็นจำนวนครั้งเท่ากับครึ่งหนึ่งของความยาวสตริง
-    for j in range(0,int(l/2)):
+    for j in range(0,int(l+1/2)):
         # ถ้าตัวที่ i เท่ากับตัวที่ (ความยาว-i)
         if joint[j]!=joint[l-j]:
             # ให้เป็น false
