@@ -1,7 +1,7 @@
 s = 0
 
 for i in range(0,3):
-  card = input()
+  card = input().strip()
   card = card.lower()
   if card == "a":
     val = 1
