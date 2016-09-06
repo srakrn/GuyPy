@@ -24,18 +24,15 @@ for i in range(0,l+1):
     # และท่อนหลังคือตัวแรกถึง i
     # ให้ joint เท่ากับข้อความที่เกิดจากการต่อ
     joint = txt[i:] + txt[:i]
-    print(joint)
     # วนเป็นจำนวนครั้งเท่ากับครึ่งหนึ่งของความยาวสตริง
     for j in range(0,int((l+1)/2)):
         # ถ้าตัวที่ i เท่ากับตัวที่ (ความยาว-i)
-        print("\t\t{0}-{1}".format(joint[j],joint[l-j]))
         if joint[j]!=joint[l-j]:
             # ให้เป็น false
             oneLoop = False
         # วนจนเสร็จ ถ้า oneLoop ยังจริง (ก็คือไม่มีรอบไหนที่ไม่เท่ากัน)
     if oneLoop:
         status = "Y"
-        print("\t\t{0}".format(status))
 
 # จบลูปแล้วค่อยสั่ง print
 print(status)
