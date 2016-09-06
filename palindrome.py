@@ -1,6 +1,6 @@
 # palindrome.py
 
-txt = input()
+txt = input().split() #อีเกรดเดอร์ควาย
 l = len(txt)-1
 status = "Y"
 for i in range(0,int(l/2)):
