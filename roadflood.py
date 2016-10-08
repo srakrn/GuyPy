@@ -7,8 +7,8 @@ inp = input().split(",")
 flooded = 0
 
 # And check for objects with value less than 0 in inpList
-for i in inp:
-    if(int(i)<0):
+for i in range(0,len(inp)-1):
+    if(int(i)<0 || int(i+1)>0):
         flooded += 1
 
 # Print the results.
